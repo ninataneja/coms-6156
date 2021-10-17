@@ -8,12 +8,14 @@ import { OfficeHour } from './officehour'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'coms-e6156';
+  title = 'coms-e6156 office hour';
   officeHourService: OfficeHourService;
   data: any;
+  inputData = new OfficeHour();
 
   constructor(officeHourService: OfficeHourService) {
     this.officeHourService = officeHourService;
+    //this.inputData = [];
   }
 
   ngOnInit(): void {
@@ -31,7 +33,7 @@ export class AppComponent {
   }
 
   postData() {
-    this.officeHourService.postData().subscribe((data: any) => this.setData(data));
+    this.officeHourService.postData(this.inputData).subscribe((data: any) => this.setData(data));
   }
 
   putData() {

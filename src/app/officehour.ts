@@ -5,4 +5,5 @@ export class OfficeHour {
   class: string;
   semester: string;
   zoom: string;
+  link: string;
 }

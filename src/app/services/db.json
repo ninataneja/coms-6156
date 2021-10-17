@@ -54,6 +54,21 @@
       "class": "5678",
       "semester": "F21",
       "zoom": "fakeZoom"
+    },
+    {
+      "id": "Hello"
+    },
+    {
+      "id": "newTAID",
+      "location": "mudd",
+      "time": "12pm",
+      "class": "1004",
+      "semester": "Spring21",
+      "link": "fakeURL"
+    },
+    {
+      "id": "anotherTA",
+      "location": "coco"
     }
   ]
 }
