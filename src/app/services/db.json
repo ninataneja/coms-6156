@@ -1,0 +1,59 @@
+{
+  "officeHours": [
+    {
+      "id": "nat2142",
+      "location": "mudd",
+      "time": "1203",
+      "class": "1234",
+      "semester": "F21",
+      "zoom": "zoomURL"
+    },
+    {
+      "id": "aaa123",
+      "location": "butler",
+      "time": "1203",
+      "class": "1234",
+      "semester": "F21",
+      "zoom": "zoomURL"
+    },
+    {
+      "id": "bERCRDE"
+    },
+    {
+      "id": "9qtTsRw"
+    },
+    {
+      "id": "gU4i8dN"
+    },
+    {
+      "id": "MTKYVeO"
+    },
+    {
+      "id": "3zJbN5T"
+    },
+    {
+      "id": "abc123",
+      "location": "noco",
+      "time": "1203",
+      "class": "5678",
+      "semester": "F21",
+      "zoom": "fakeZoom"
+    },
+    {
+      "id": "def123",
+      "location": "noco",
+      "time": "1203",
+      "class": "5678",
+      "semester": "F21",
+      "zoom": "fakeZoom"
+    },
+    {
+      "id": "prq123",
+      "location": "noco",
+      "time": "1203",
+      "class": "5678",
+      "semester": "F21",
+      "zoom": "fakeZoom"
+    }
+  ]
+}
