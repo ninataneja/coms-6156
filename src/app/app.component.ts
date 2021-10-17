@@ -37,11 +37,11 @@ export class AppComponent {
   }
 
   putData() {
-    this.officeHourService.putData().subscribe((data: any) => this.setData(data));
+    this.officeHourService.putData(this.inputData).subscribe((data: any) => this.setData(data));
   }
 
   deleteData() {
-    this.officeHourService.deleteData().subscribe((data: any) => this.setData(data));
+    this.officeHourService.deleteData(this.inputData).subscribe((data: any) => this.setData(data));
   }
 
 }

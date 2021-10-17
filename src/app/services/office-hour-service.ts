@@ -28,14 +28,14 @@ export class OfficeHourService {
     return this.http.post(url, data, {'headers':headers});
   }
 
-  putData() {
-    const url = 'http://localhost:3000/officeHours/bERCRDE'
-    console.log(this.http.put(url, "id: abc123"));
-    return this.http.put(url, "12345");
+  putData(officeHour:OfficeHour) {
+    const url = 'http://localhost:3000/officeHours/' + officeHour.id;
+    console.log(this.http.put(url, officeHour));
+    return this.http.put(url, officeHour);
   }
 
-  deleteData() {
-    const url = 'http://localhost:3000/officeHours/5I5AdCN'
+  deleteData(officeHour: OfficeHour) {
+    const url = 'http://localhost:3000/officeHours/' + officeHour.id;
     console.log(this.http.delete(url));
     return this.http.delete(url);
   }
