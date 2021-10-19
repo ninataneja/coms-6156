@@ -1,8 +1,11 @@
 export class OfficeHour {
-  id: string;
+  id: number;
+  ta_id: number;
   location: string;
-  time: string;
-  class: string;
-  semester: string;
-  link: string;
+  course_name: string;
+  start_time: string;
+  end_time: string;
+  zoom_link: string;
 }
+
+

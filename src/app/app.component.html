@@ -17,29 +17,34 @@
     </div>
 
     <div>
+      <label>TA ID: </label>
+      <input [(ngModel)]="inputData.ta_id" />
+    </div>
+
+    <div>
       <label>Location: </label>
       <input [(ngModel)]="inputData.location" />
     </div>
 
     <div>
-      <label>Time: </label>
-      <input [(ngModel)]="inputData.time" />
+      <label>Start Time: </label>
+      <input [(ngModel)]="inputData.start_time" />
+    </div>
+
+    <div>
+      <label>End Time: </label>
+      <input [(ngModel)]="inputData.end_time" />
     </div>
 
 
     <div>
       <label>Class: </label>
-      <input [(ngModel)]="inputData.class" />
-    </div>
-
-    <div>
-      <label>Semester: </label>
-      <input [(ngModel)]="inputData.semester" />
+      <input [(ngModel)]="inputData.course_name" />
     </div>
 
     <div>
       <label>Link: </label>
-      <input [(ngModel)]="inputData.link" />
+      <input [(ngModel)]="inputData.zoom_link" />
     </div>
 
   <div>
@@ -52,29 +57,34 @@
   </div>
 
   <div>
+    <label>TA ID: </label>
+    <input [(ngModel)]="inputData.ta_id" />
+  </div>
+
+  <div>
     <label>Location: </label>
     <input [(ngModel)]="inputData.location" />
   </div>
 
   <div>
-    <label>Time: </label>
-    <input [(ngModel)]="inputData.time" />
+    <label>Start Time: </label>
+    <input [(ngModel)]="inputData.start_time" />
+  </div>
+
+  <div>
+    <label>End Time: </label>
+    <input [(ngModel)]="inputData.end_time" />
   </div>
 
 
   <div>
     <label>Class: </label>
-    <input [(ngModel)]="inputData.class" />
-  </div>
-
-  <div>
-    <label>Semester: </label>
-    <input [(ngModel)]="inputData.semester" />
+    <input [(ngModel)]="inputData.course_name" />
   </div>
 
   <div>
     <label>Link: </label>
-    <input [(ngModel)]="inputData.link" />
+    <input [(ngModel)]="inputData.zoom_link" />
   </div>
 
   <div>
@@ -95,10 +105,12 @@
     <thead>
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Location</th>
+      <th scope="col">TA ID</th>
       <th scope="col">Class</th>
-      <th scope="col">Semester</th>
-      <th scope="col">Link</th>
+      <th scope="col">Location</th>
+      <th scope="col">Zoom Link</th>
+      <th scope="col">Start Time</th>
+      <th scope="col">End Time</th>
     </tr>
     </thead>
     <tbody>
@@ -106,10 +118,12 @@
       <td>
         {{ p.id }}
       </td>
-      <td>{{p.class }}</td>
+      <td>{{p.ta_id }}</td>
+      <td>{{p.course_name }}</td>
       <td>{{ p.location }}</td>
-      <td>{{ p.semester }}</td>
-      <td>{{ p.zoom }}</td>
+      <td>{{ p.zoom_link }}</td>
+      <td>{{ p.start_time }}</td>
+      <td>{{ p.end_time }}</td>
     </tr>
     </tbody>
   </table>

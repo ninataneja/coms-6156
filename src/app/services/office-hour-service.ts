@@ -7,20 +7,23 @@ import { OfficeHour } from '../officehour';
 })
 export class OfficeHourService {
   //url = "https://api.publicapis.org/entries";
-  url = "http://localhost:3000/officeHours";
+  //url = "http://localhost:3000/officeHours";
+  url = "http://ohmicroservice-env-final.eba-rjxsixam.us-east-1.elasticbeanstalk.com/officehours";
   constructor(private http: HttpClient) {
   }
 
   /** GET data from the server */
   getData() {
    // const url = 'https://api.publicapis.org/entries'
-    const url = 'http://localhost:3000/officeHours'
+    //const url = 'http://localhost:3000/officeHours'
+    const url = "http://ohmicroservice-env-final.eba-rjxsixam.us-east-1.elasticbeanstalk.com/officehours";
     console.log(this.http.get(url));
     return this.http.get(url);
   }
 
   postData(officeHour:OfficeHour) {
-    const url = 'http://localhost:3000/officeHours'
+   // const url = 'http://localhost:3000/officeHours'
+    const url = "http://ohmicroservice-env-final.eba-rjxsixam.us-east-1.elasticbeanstalk.com/officehours";
     const data = officeHour;
     const headers = { 'content-type': 'application/json'}
     //const data = {"id": "prq123", "location": "noco", "time": "1203", "class": "5678", "semester": "F21", "zoom": "fakeZoom"}
@@ -29,13 +32,13 @@ export class OfficeHourService {
   }
 
   putData(officeHour:OfficeHour) {
-    const url = 'http://localhost:3000/officeHours/' + officeHour.id;
+    const url = "http://ohmicroservice-env-final.eba-rjxsixam.us-east-1.elasticbeanstalk.com/officehours/" + officeHour.id;
     console.log(this.http.put(url, officeHour));
     return this.http.put(url, officeHour);
   }
 
   deleteData(officeHour: OfficeHour) {
-    const url = 'http://localhost:3000/officeHours/' + officeHour.id;
+    const url = 'http://ohmicroservice-env-final.eba-rjxsixam.us-east-1.elasticbeanstalk.com/officehours/' + officeHour.id;
     console.log(this.http.delete(url));
     return this.http.delete(url);
   }
